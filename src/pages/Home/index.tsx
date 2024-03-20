@@ -1,11 +1,23 @@
 import { Hero } from "../../components/Hero";
-import * as Styles from "./styles";
+import * as Styled from "./styles";
 
+import { coffees } from "../../data.json";
+import { CoffeeCard } from "../../components/CoffeeCard/CoffeeCard";
 export function Home() {
   return (
-    <Styles.Container>
+    <Styled.Container>
       <Hero />
-      <h1>Coffee sction</h1>
-    </Styles.Container>
+      <Styled.mainDiv>
+        <Styled.Title>Nossos cafés</Styled.Title>
+        <Styled.CoffeeList>
+          {coffees.map((coffee) => (
+            <CoffeeCard
+              key={coffee.id}
+              coffee={coffee}
+            />
+          ))}
+        </Styled.CoffeeList>
+      </Styled.mainDiv>
+    </Styled.Container>
   );
 }

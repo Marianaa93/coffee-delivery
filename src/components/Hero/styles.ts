@@ -14,11 +14,14 @@ export const MainDiv = styled.div`
 export const HeroTitle = styled.h1`
   font-family: "Baloo 2", sans-serif;
   font-size: 3rem;
+  line-height: 130%;
 `;
 
 export const HeroSubtitle = styled.p`
   font-family: "Roboto", sans-serif;
   font-size: 1.25rem;
+  line-height: 130%;
+  margin-top: 1rem;
 `;
 
 export const HeroDetailsBox = styled.div`
@@ -38,6 +41,7 @@ export const HeroDetailsSpan = styled.span`
     font-family: "Roboto", sans-serif;
     font-size: 1rem;
     color: ${(props) => props.theme["base-text"]};
+    line-height: 130%;
   }
 `;
 
