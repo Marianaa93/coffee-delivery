@@ -16,7 +16,7 @@ export function Header() {
           />
           <span>Porto Alegre</span>
         </Styled.CitySpan>
-        <Styled.ShoppingCartSpan>
+        <Styled.ShoppingCartSpan to={"/checkout"}>
           <ShoppingCart
             size={24}
             color={theme["yellow-dark"]}

@@ -1,3 +1,11 @@
+import { Hero } from "../../components/Hero";
+import * as Styles from "./styles";
+
 export function Home() {
-  return <h1>Home</h1>;
+  return (
+    <Styles.Container>
+      <Hero />
+      <h1>Home</h1>
+    </Styles.Container>
+  );
 }
