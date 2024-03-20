@@ -1,14 +1,28 @@
 import { MapPin, ShoppingCart } from "@phosphor-icons/react";
 import logo from "../../assets/logo.svg";
+import * as Styled from "./styles";
+import { useTheme } from "styled-components";
 
 export function Header() {
+  const theme = useTheme();
   return (
-    <div>
+    <Styled.Container>
       <img src={logo} />
-      <div>
-        <MapPin /> <p>Porto Alegre</p>
-      </div>
-      <ShoppingCart size={24} />
-    </div>
+      <Styled.RightBox>
+        <Styled.CitySpan>
+          <MapPin
+            size={24}
+            color={theme.purple}
+          />
+          <span>Porto Alegre</span>
+        </Styled.CitySpan>
+        <Styled.ShoppingCartSpan>
+          <ShoppingCart
+            size={24}
+            color={theme["yellow-dark"]}
+          />
+        </Styled.ShoppingCartSpan>
+      </Styled.RightBox>
+    </Styled.Container>
   );
 }
