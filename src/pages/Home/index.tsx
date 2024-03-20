@@ -5,7 +5,7 @@ export function Home() {
   return (
     <Styles.Container>
       <Hero />
-      <h1>Home</h1>
+      <h1>Coffee sction</h1>
     </Styles.Container>
   );
 }

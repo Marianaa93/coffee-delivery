@@ -1,10 +1,16 @@
 import { styled } from "styled-components";
 import { defaultTheme } from "../../styles/themes/defaultTheme";
+import heroBg from "../../assets/hero-bg.svg";
 
 export const Container = styled.div`
-  display: flex;
+  background-image: url(${heroBg});
 `;
 
+export const MainDiv = styled.div`
+  display: flex;
+  margin: 32px auto;
+  max-width: 1160px;
+`;
 export const HeroTitle = styled.h1`
   font-family: "Baloo 2", sans-serif;
   font-size: 3rem;
