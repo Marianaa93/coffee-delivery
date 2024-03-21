@@ -21,6 +21,7 @@ export const CitySpan = styled.span`
   display: flex;
   padding: 10px 8px;
   border-radius: 5px;
+  align-items: center;
 
   background-color: ${(props) => props.theme["purple-light"]};
 `;
